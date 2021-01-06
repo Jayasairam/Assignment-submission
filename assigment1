@@ -1,0 +1,25 @@
+
+
+count=0
+while count<5:
+    user_id=input('enter the user id')
+    if user_id=='INDIA':
+        print('entered user_id is valid')
+    else:
+        print('entered user_id is invalid')
+        count+=1
+    while user_id=='INDIA' and count<5:
+        password=input('enter the pasword')
+        if password=='IND':
+            print('entered password is valid')
+            break
+        else:
+            print('entered password is invalid')
+            count+=1
+    if user_id=='INDIA' and password=='IND':
+        print('access granted')
+        break
+    if count>4:
+        print('access denied')
+            
+
